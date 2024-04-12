@@ -1,4 +1,5 @@
 const nao = document.getElementById('nao');
+const sim = document.getElementById('sim');
 const calcDiv = document.getElementById('calc-div');
 const inputResult = document.getElementById('input-result');
 const sendButton = document.getElementById('send');
@@ -13,8 +14,12 @@ sendButton.addEventListener('click', (e) => {
 
   if(result === 1){
     console.log('redirect');
-    window.location.href = 'rejeitado.html';
+    window.location.href = 'meodeia.html';
   } else {
     console.log('error');
   }
+});
+
+sim.addEventListener('click', (e) => {
+  window.location.href = 'teamo.html'
 })
